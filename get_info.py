@@ -1,5 +1,2 @@
-def recup_info(seisme_info):
-    co = []
-    for i in range (len(seisme["geometry"])):
-        co.append((seisme["geometry"].x,seisme["geometry"].y))
-    return co
+def recup_info(seismes):
+    return seismes["mag"], seismes["geometry"].x,seismes["geometry"].y
