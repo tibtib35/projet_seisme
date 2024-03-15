@@ -1,13 +1,14 @@
 import map_creation as mp
 import get_info as gi
-import test as dc
+import draw_circle as dc
 import geopandas
 from folium.plugins import Search
 
 map = mp.create(48.1333,  -1.9667)
-
+date = ('2014-01-01','2014-01-02')
+user = '&starttime='+date[0]+'&endtime='+date[1]
 seismes = geopandas.read_file(
-    "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2014-01-01&endtime=2014-01-02",
+    "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson"+user,
     driver="GeoJSON",
 )
 
