@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yo BG</title>
+</head>
+<header>
+    Entrez les différents paramètre pour votre carte sismique. 
+</header>
+<body>
+    <input id = 'date' type="date" name="date"/>
+    <input id = 'date2' type="date" name="dateend"/>
+</body>
+<footer>
+<button class="styled" type="button" onclick='getValue();'/>Validate</button>
+<script>
+    function getValue(a,b) {
+    // Sélectionner l'élément input et récupérer sa valeur
+    var input = document.getElementById("date").value;
+    alert(input);
+    var input = document.getElementById("date2").value;
+    // Afficher la valeur
+    alert(input);
+}
+</script>
+</footer>
+</html>
