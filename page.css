@@ -1,0 +1,79 @@
+@font-face {
+    font-family: regular; src: url("Spinnaker-Regular.ttf"); 
+}
+
+body {
+    background-image: url("téléchargement.jfif");
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: #000000;
+    margin-left: 440px;
+    font-size: 40px;
+    float: center;
+    padding-top: 50px;
+    font-family: 'regular';
+    
+}
+
+header {
+    font-size: 20px;
+    float: center;
+    padding-top: 25px;
+    color: #000000;
+    font-family: 'regular'; 
+    padding-left: 310px;
+}
+
+.choi {
+    font-size: 20px;
+    float: center;
+    padding-top: 25px;
+    color: #000000;
+    font-family: 'regular'; 
+    padding-left: 440px;
+}
+
+.d1 {
+    font-size: 30px;
+    position: absolute;
+    float: center;
+    padding-top: 100px;
+    color: #000000;
+    font-family: 'regular'; 
+    padding-left: 250px;
+}
+
+#date {
+    font-size: 30px;
+    float: center;
+    margin-left: 17.5%;
+    margin-top: 1%;
+    color: #000000;
+    font-family: 'regular'; 
+    position: absolute;
+    margin-top: 11.5%;
+}
+
+.d2 {
+    font-size: 30px;
+    float: center;
+    padding-top: 100px;
+    color: #000000;
+    font-family: 'regular'; 
+    margin-left: 84.5%;
+    position: absolute;
+}
+
+#date2 {
+    font-size: 30px;
+    float: center;
+    margin-left: 80%;
+    margin-top: 1%;
+    color: #000000;
+    font-family: 'regular'; 
+    position: absolute;
+    margin-top: 11.5%;
+}
