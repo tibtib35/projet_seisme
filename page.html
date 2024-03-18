@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="fr">
+    <link rel=" stylesheet " href ="page.css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yo BG</title>
+    <title>Les Séismes Dans le Monde</title>
+    <h1>Bienvenue sur notre site internet!</h1>
 </head>
 <header>
-    Entrez les différents paramètre pour votre carte sismique. 
+    Grâce a notre site vous pourrez créer une carte intéractive affichant les séismes dans le monde
 </header>
 <body>
+    <div class="choi">Veuillez choisir les dates limites pour créer votre carte sismique: </div>
+    <div class="d1">Date de début:</div>
     <input id = 'date' type="date" name="date"/>
+    <div class="d2">Date de fin:</div>
     <input id = 'date2' type="date" name="dateend"/>
 </body>
 <footer>
+    <div class="fin">Cliquez ici pour afficher votre carte:</div>
 <button class="styled" type="button" onclick='getValue();'/>Validate</button>
 <script>
     function getValue(a,b) {
@@ -24,5 +30,8 @@
     alert(input);
 }
 </script>
+
 </footer>
+<a href = 'map.html'>Go to the map</a>
 </html>
+
