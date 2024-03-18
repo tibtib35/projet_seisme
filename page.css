@@ -43,13 +43,13 @@ header {
     padding-top: 100px;
     color: #000000;
     font-family: 'regular'; 
-    padding-left: 250px;
+    margin-left: 27.5%;
 }
 
 #date {
     font-size: 30px;
     float: center;
-    margin-left: 17.5%;
+    margin-left: 22.5%;
     margin-top: 1%;
     color: #000000;
     font-family: 'regular'; 
@@ -63,14 +63,14 @@ header {
     padding-top: 100px;
     color: #000000;
     font-family: 'regular'; 
-    margin-left: 84.5%;
+    margin-left: 90%;
     position: absolute;
 }
 
 #date2 {
     font-size: 30px;
     float: center;
-    margin-left: 80%;
+    margin-left: 85%;
     margin-top: 1%;
     color: #000000;
     font-family: 'regular'; 
