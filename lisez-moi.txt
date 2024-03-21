@@ -1,0 +1,3 @@
+Ouvrir le fichier main.py dans un IDE.
+Entrer les paramètre de la carte voulue
+Ouvrir le fichier map.html dans un navigateur internet
