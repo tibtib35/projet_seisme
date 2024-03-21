@@ -12,4 +12,3 @@ seismes = geopandas.read_file(
     "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson"+user,
     driver="GeoJSON",
 )
-
