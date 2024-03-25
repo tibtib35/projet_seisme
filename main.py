@@ -19,15 +19,3 @@ def inserer_code_html(nom_fichier, nouveau_code_html, position):
     contenu.insert(position, nouveau_code_html)
     with open(nom_fichier, 'w') as fichier:
         fichier.write(''.join(contenu))
-
-nouveau_code = """
-<div class='btn'>
-    <button> lol <button\>
-</div>
-"""
-
-inserer_code_html('map.html', nouveau_code, 40)
-css_code = """
-                .btn{background-color:rgb(115, 205, 228);width:100%}
-"""
-inserer_code_html('map.html', css_code, 35)
