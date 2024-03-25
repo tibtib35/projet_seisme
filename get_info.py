@@ -15,4 +15,4 @@ def recup_mag():
     mag = int(input("Entrez la magnitude minimum des seismes affichés (entre 0 et 9 compris): "))
     if type(mag) != int or mag > 9 or mag < 0 :
         raise NameError('Wrong format, try again')
-    return int(mag)
+    return str(mag)
