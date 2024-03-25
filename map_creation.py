@@ -6,7 +6,8 @@ def create(latitude, logitude):
     return map
 
 date = gi.recup_date()
-user = '&starttime='+date[0]+'&endtime='+date[1]
+mi=gi.recup_mag()
+user = '&starttime='+date[0]+'&endtime='+date[1]+'&minmagnitude='+mi
 
 seismes = geopandas.read_file(
     "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson"+user,
