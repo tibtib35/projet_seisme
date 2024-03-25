@@ -3,10 +3,9 @@ import math
 import get_info as gi
 
 m = folium.Map(location=[ 48.1333,  -1.9667], zoom_start=5)
-min = gi.recup_mag()
 def circle(magnitude,latitude, longitude,map):
     for i in range(len(magnitude)):
-        if magnitude[i] >= min:
+        if magnitude[i] >= 0:
             radius = magnitude[i]*100000*math.cos(longitude[i]/180*math.pi)
             folium.Circle(
                 location=[longitude[i],  latitude [i]],
