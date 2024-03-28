@@ -1,9 +1,14 @@
+
 import map_creation as mp
 import get_info as gi
 import draw_circle as dc
+import folium.plugins
+
 
 map = mp.create(48.1333,  -1.9667)
+
 seismes = mp.seismes
+
 info = gi.recup_info(seismes)
 
 magnitude = info[0]
@@ -11,11 +16,8 @@ latitude = info[1]
 longitude = info[2]
 
 dc.circle(magnitude,latitude,longitude,map)
+
+map.add_child(folium.plugins.MeasureControl())
+
 map.save("map.html")
 
-def inserer_code_html(nom_fichier, nouveau_code_html, position):
-    with open(nom_fichier, 'r') as fichier:
-        contenu = fichier.readlines()
-    contenu.insert(position, nouveau_code_html)
-    with open(nom_fichier, 'w') as fichier:
-        fichier.write(''.join(contenu))
