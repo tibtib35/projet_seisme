@@ -1,8 +1,6 @@
 import folium
 import math
-import get_info as gi
 
-m = folium.Map(location=[ 48.1333,  -1.9667], zoom_start=5)
 def circle(magnitude,latitude, longitude,map):
     for i in range(len(magnitude)):
         if magnitude[i] >= 0:
@@ -18,3 +16,4 @@ def circle(magnitude,latitude, longitude,map):
                 fill=False,  # gets overridden by fill_color
                 popup="magnitude de {}".format(magnitude[i]),
             ).add_to(map)
+
