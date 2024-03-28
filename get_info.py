@@ -16,7 +16,7 @@ def recup_date():
 
 def recup_mag():
     '''
-    Renvoie des inputs permettant au client de rentrer la date de début et de fin des séismes
+    Renvoie des inputs permettant au client de rentrer la magnitude minimum des séismes affichés
     '''
     mag = int(input("Entrez la magnitude minimum des seismes affichés (entre 0 et 9 compris): "))
     if type(mag) != int or mag > 9 or mag < 0 :
