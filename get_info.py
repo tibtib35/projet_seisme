@@ -1,4 +1,7 @@
 def recup_info(seismes):
+    '''
+    Prend en paramètres des séismes et renvoie leur magnitude, latitude et longitude.
+    '''
     return seismes["mag"], seismes["geometry"].x,seismes["geometry"].y
 
 
