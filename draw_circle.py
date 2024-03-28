@@ -16,7 +16,7 @@ def circle(magnitude,latitude, longitude,map):
                 fill_opacity=0.8,
                 opacity=1,
                 fill_color="#FF5F5D" if magnitude[i] > 7 else "#ED8B16" if magnitude[i] > 5  else "#FFEC5C" if magnitude[i] > 4.50 else "#146152", # défini la couleur de remplissage du cercle selon un dégradé qui a un rapport à la magnitude (de vert = séismes les plus faibles au rouge = séismes les plus forts)
-                fill=False,  # gets overridden by fill_color
-                popup="magnitude de {}".format(magnitude[i]),
-            ).add_to(map)
+                fill=False,  # Pas prioritaire par rapport à 'fill_color'
+                popup="magnitude de {}".format(magnitude[i]), # ajoute un texte indiquant la magnitude
+            ).add_to(map) # ajoute le cercle à la carte 
 
