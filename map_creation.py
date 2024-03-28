@@ -2,6 +2,9 @@ import geopandas
 import folium
 import get_info as gi
 def create(latitude, logitude):
+    '''
+    Prend en paramètre des coordonnées géographiques et défini plusieurs paramètres de la carte folium et créé celle-ci. 
+    '''
     map = folium.Map(location=[ latitude,  logitude], zoom_start=5, control_scale=True) # cration de la carte, définition de la position de départ, définition d'un zoom fois 5 au départ et ajout d'une échelle de distance sur la carte
     return map
 
